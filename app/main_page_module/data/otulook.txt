@@ -1,0 +1,20 @@
+#Outlook settings
+
+- Seleziona email come letta - Files->Options->Advance->Reading Pane-> Mark items as read
+
+# send, send as, forward ENABLE - Files->Options->Replies and forward -> Open replies and forwards in a new window
+
+# Problemi
+- aumentare la casella postale gi xG ->> product management
+
+
+# Errori
+- "Outlook error : The set of folders cannot be opened . MS Exchange is not available. Either there are network problems or Exchange server is down for maintenance."   ->> gira a Help Desk Bologna (HD Technico)
+- non puo accedere all'outlook (domain : CRIFNET), ma tutto e configurato bene ->> gira a product
+
+#TAGS
+> 
+
+
+
+

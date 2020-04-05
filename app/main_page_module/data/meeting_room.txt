@@ -1,0 +1,9 @@
+-Default non dovrebbe lasciare prenotare la stanza a più di una persona alla volta
+-se chiedono cose più della creazione, manda a product
+
+
+
+
+#TAGS
+> resource meeting rooms
+

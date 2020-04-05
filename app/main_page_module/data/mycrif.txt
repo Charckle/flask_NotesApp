@@ -1,0 +1,21 @@
+
+-mycrif accesso sharepoint\project - si abilita con la utenza AD/gruppi AD, niente da fare (APRE TICKET!)
+-Carta intestata - coma da manuale
+
+#Gruppo aziendale (Basic User)
+-chiedi a hiring, se non sai quale gruppo iaggiungi
+-madagaskar - CRIF Asia
+
+#Sole 24 ore
+- Tutti sono abilitati
+- Accesso: https://mycrif.crifnet.com/UnitArea/CRM/24ore/Forms/AllItems.aspx
+- Problems: crif focalpoint (Mateja Novak)
+
+#TAGS
+> mycrif carta intestata
+
+
+
+
+
+

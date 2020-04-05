@@ -1,0 +1,8 @@
+- Richieste dimissioni tramite REG - se sono dipendenti,controlla con hiring se non cè gia un reg-out, se no devono farlo tramite Hiring.  Se sono consulenti possiamo farlo e diciamo di avvisare hiring.
+
+- Microsoft RS -> si scrive a Reporting BI Team per togliere l'abilitazione.
+
+#TAGS
+> dimissioni dimissione
+
+

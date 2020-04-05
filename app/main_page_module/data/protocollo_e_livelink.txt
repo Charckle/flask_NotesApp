@@ -1,0 +1,9 @@
+# Protocollo
+
+La sincronizzazione tra AD e LL, gira alle: 9.00 – 13.00 – 16.00 – 19.00
+
+-Attr. 4 -> LLUser
+
+
+# TAGS
+> protocollo livelink

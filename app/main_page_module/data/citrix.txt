@@ -1,0 +1,23 @@
+#Citrix
+
+- server: citrixapp.crifnet.com
+- internet proxy: http://pacsrv.crif.com/proxy.pac
+
+
+- se non si puo connettere su delle webpage, aggiungi il utente al gruppo citrix_koper
+- se dopo il cambio del pwd non riescono a vedere le stampanti apri cmd prompt e inserisci gpupdate /force
+
+#Mappamento MyDocuments
+- Disco X -> map drive -> \\citrixfssrv.crifnet.com\DocumentsWin2016$\username
+
+#ERRORI
+- Se non ha l'internet su explorer in citrix, imposta il proxy:
+-- Internet Options -> Connections -> LAN settings -> OK-Automatically detect settings, OK Use automatic configuration script
+-- Address http://pacsrv.crif.com/proxy.pac
+
+#TAGS
+> citrix
+
+
+
+

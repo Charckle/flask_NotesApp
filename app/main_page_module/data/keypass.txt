@@ -1,0 +1,10 @@
+#Keypass
+
+#database di tutti
+il file è il K:\KOPER\IT Koper\Sviluppo\ ITDBX.kdbx
+la pass è IT_KOPER
+
+
+
+#TAGS
+> keypass ITDBX

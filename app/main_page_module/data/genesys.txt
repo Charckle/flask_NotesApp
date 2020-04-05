@@ -1,0 +1,22 @@
+# CTI (old: Genesys)
+## Abilitazioni
+
+!!!!! ATENZIONE!!!!!
+
+-Dal primo novembre cambia e Genesys non esiste più. per le abilitazioni contattare cti.support@crif.com!!!
+-E stato segnalato di cambiare il profil ostandard, si deve aggiornare il txt quando fatto
+
+!!!!! ATENZIONE!!!!!
+
+- CTI aziendali, Supervisor -> itsystemadministratorabil@noaddress.com (email non genera il ticket)
+>Bisogna prima contattare il coordinatore se hanno un agente libero o si deve creare uno nuovo. In molti casi non serve l'abilitazione
+
+- CTI aziendale, IWS -> itsystemadministratorabil@noaddress.com  (email non genera il ticket)
+>Bisogna prima contattare il coordinatore se hanno un agente libero o si deve creare uno nuovo, e per un contatto dal quale copiare le abiltiazioni
+
+- CTI aziendale, Agent Centralino -> itsystemadministratorabil@noaddress.com  (email non genera il ticket)
+>Bisogna prima contattare il coordinatore se hanno un agente libero o si deve creare uno nuovo, e per un contatto dal quale copiare le abiltiazioni
+
+
+
+

@@ -1,0 +1,25 @@
+# Outlook groups
+
+A group can be:
+- distribution, meaning its purpuise is to forward emails
+- security, meaning it gives abilities to its users
+-- un gruppo deve essere Security, per poterlo abilitare ad'una casella
+-- prima ti cambiare un gruppo a Security, si deve contattare Product m., se si può
+
+## MANAGE BY
+- Special permissions (?)
+
+#DELETE GROUP
+
+- Se sono distribution, tasto destro in AD e Delete
+- Se sono security si deve vedere nel manuale "manuale sos.abil. dimissione gruppi
+--vedi, se il gruppo ha qualche abilitazione, e se l'ha, devi mandare una email
+
+
+
+#TAGS
+> groups
+
+
+
+

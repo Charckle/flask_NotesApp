@@ -1,0 +1,93 @@
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <!-- Custom styles for this template -->
+    <link href="https://getbootstrap.com/docs/4.0/examples/sign-in/signin.css" rel="stylesheet">
+
+    <title>HDSearch CRIF</title>
+
+  </head>
+
+  <body class="text-center">
+
+
+{% block content%}
+
+{% macro render_field(field, placeholder=None) %}
+<div class="form-group">
+    {% set css_class = 'form-control ' + kwargs.pop('class', '') %}
+
+    {{ field.label }}
+
+    {% if field.errors %}
+        {% set css_class = css_class + ' is-invalid' %}
+
+        {% for error in field.errors %}
+            
+            <small id="{{ field.label.text }}" class="text-danger">
+                {{ error }}
+          </small>
+
+        {% endfor %}
+        </ul>
+    {% endif %}
+
+    {{ field(class=css_class, placeholder=placeholder, **kwargs) }}
+</div>
+{% endmacro %}
+
+
+<div>
+  {% with messages = get_flashed_messages(with_categories=true) %}
+    {% if messages %}
+      <div>
+        {% for category, message in messages %}
+          {% if category == "error" %}
+            <div class="alert alert-danger" role="alert">
+              {{ message }}
+            </div>
+            <br>
+          {% else %}
+            <div class="alert alert-success" role="alert">
+              {{ message }}
+            </div>
+            <br>
+          {% endif %}
+        {% endfor %}
+      </div>
+    {% endif %}
+  {% endwith %}
+  <div>
+    <img class="mb-4" src="https://getbootstrap.com/docs/4.0/assets/brand/bootstrap-solid.svg" alt="" width="72" height="72">
+    <legend>Sign in</legend>
+
+    <form method="POST" action="." accept-charset="UTF-8" role="form">
+      {{ form.csrf_token }}
+      {{ render_field(form.username_or_email, placeholder="Your Email Address",
+                                  autofocus="") }}
+      {{ render_field(form.password, placeholder="Password") }}
+      <div>
+      <label>
+        <input type="checkbox" name="remember"> Remember Me
+      </label>
+      <a role="button" href="">Forgot your password?</a><span class="clearfix"></span>
+      </div>
+      <div class="form-group">
+        {{ form.submit(class="form-control btn btn-primary mb-2") }}
+        </div>
+    </form>
+    <a role="button" href="{{ url_for('main_page_module.register') }}">Not registered yet? Do it now!</a><span class="clearfix"></span>
+  </div>
+</div>
+{% endblock %}
+
+</body>
+</html>

@@ -1,0 +1,14 @@
+
+# Numero telefono Jabber
+- Per connettere una utenza Jabber con un numer otelefonico, si deve ricevere un ticket sulla HD Koper
+- Si va a compilare il Collaboration Form, che si trova nel email Template.
+- Si deve inserire i dati del utente, il Manager del utente (dal quale deviavere il OK), e il ticket, con il quale hanno richiesto il telefono
+- Mandare la email!
+- - 
+- Ti daranno le configurazioni del nuovo telefono, e tu glielo devi confermare
+
+
+#TAGS
+> jabber, phone
+
+

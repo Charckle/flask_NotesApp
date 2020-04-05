@@ -1,0 +1,34 @@
+# Approvatore note spese
+
+## Check cosa manca al utente
+- entra su FIORI ->> ZFCK ->> Utente: <username> ->> klicca il bottone alla destra del orologio, seleziona TE_APPROVAL
+- Le cose segnate in giallo mancano
+
+# SAP PRD
+- Aggiungere i ruoli (accanto i ruoli che ha bisogno per il funzionamento di FIORI):
+SAP_FIN_TE_APV_APP
+Z_GWUSER
+Z_SAP_FIORI_USER
+Z_TE_RESPONSABILE_nnnnnnn (lo devi creare)
+
+- Cambia la licenza a Special User Approver (71)
+
+# SAP FIORI
+- Aggiungere i ruoli (accanto i ruoli che ha bisogno per il funzionamento di FIORI):
+ZCRIF_FIORI_03
+ZSAP_FIORI_USER
+Z_GWUSER
+
+# Creazione del ruolo Z_TE_RESPONSABILE_nnnnnnn
+- Usa il manuale
+
+# Agente
+- Aggiungere il agente nella transazione ZAGENTI_WF
+-- E uno dei step nella creazione Z_TE_RESPONSABILE_nnnnnn
+
+
+#TAGS
+> approvatore note spese travel expense approval
+
+
+

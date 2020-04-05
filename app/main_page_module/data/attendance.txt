@@ -1,0 +1,10 @@
+# HRtime
+-la il update dalla attendace alle ore 9:00 di ogni mattina
+
+# Malattia
+- per la malattia non si inserisce nel HR time, ma lo fa HR da solo, quando mandi la conferma della malattia
+
+
+#TAGS
+> attendance hr time
+

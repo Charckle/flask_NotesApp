@@ -1,0 +1,13 @@
+# Manuale d'uso
+- Transazione zcarat
+- clicca sulla icona a destra del orologio "Cercare variante"
+- cancella le indicazioni della tua utenza sotto "Creato da" e parti con il orologo.
+- Seleziona "aparte_no_ts", e dai il OK
+- Lancia il orologio nella finestra primaria e aspetta 5 minuti, che il report si aggiorni+
+- poil usa i filtri per trovare quello che cerci
+
+
+
+#TAGS
+> SAP_ZCARAT SAP ZCARAT
+

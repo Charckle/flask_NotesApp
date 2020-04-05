@@ -1,0 +1,9 @@
+# Nuova share
+-share.crifnet.com -> Lists -> CrifDocumentSiteList -> New Item ; update document sites  (attenzione : serve avere info per owner,data owner,read,write,title,permission manager,locked si/no --- Department/Area SEMPRE "others")
+
+# Blocked share
+- mandare il errore, che ricevi sulla mail, a corporate
+
+#TAGS
+> share
+

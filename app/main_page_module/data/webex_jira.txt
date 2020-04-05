@@ -1,0 +1,12 @@
+# Webex
+--Gruppo di competenza: bookmeetingHQ@crif.com
+
+- Solo persone autorizzate possono iniziare un meeting.
+- Se ti chiedono l'abilitazione, manda gli il manuale.
+
+
+#Jira
+
+-Le abilitazioni non facciamo noi.
+-Se hanno un problema, gira a Corporate
+

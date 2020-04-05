@@ -1,0 +1,9 @@
+# Business Object
+
+Per l’abilitazione a BO, è necessario inserire la user di rete nel gruppo AD crifnet\bousersprd e bouserscld
+Al termine dell’inserimento dell’utente nei gruppi bousersprd e bouserscld assegnare al gruppo BW_SAP per completare l’abilitazione dei diritti su Business Object.
+
+
+
+#TAGS
+> 

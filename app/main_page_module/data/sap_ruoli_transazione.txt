@@ -1,0 +1,18 @@
+# Transazione
+
+Per aggiungere una transazione si deve aggiungere il ruolo giusto.
+-Si cerca se la transazione ha già un ruolo solo per se, usando la transazione SUIM (qualche volta la transazione richiesta e un un ruolo con più altre transazioni)
+--se troviamo il ruolo, che abilita la transazione, la aggiungiamo al utente
+--se la transazione non ha un ruolo suo, la creiamo come da manuale
+
+#Profili
+- AMMINISTRAZIONE CLIENTI ->> si deve chiedere che profilo specifico, o che diano una utenza di riferimento
+
+# Approvatore note spese
+- Si crea il ruolo per approvatore come da manuale (7.8	Z_TE_RESPONSABILE_**** )
+- Si prosegue a aggiungere il utente come approvatore note spese nella transazione ZAGENTI_WF. (e incluso sotto la creazione del ruolo)
+
+# TAG
+> transazione transaction ruolo role sap suim aprovatore note spese
+
+

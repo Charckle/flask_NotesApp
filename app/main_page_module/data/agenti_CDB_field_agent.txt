@@ -1,0 +1,14 @@
+# Arrivano tre ticket:
+- BIS: lo esegui normalmente (come da sotto)
+- Garbati: le mandi le credenziali
+- Judici Monica: manda i dati per CRM
+
+# Cosa fare
+- si crea un contatto con la email esterna, che te la danno
+- si crea una utenza su EXT con iniziale "ag" e si mette il forward sul contatto, cosi che la email resta su tutte e due mail
+- continua a creare il REG come normale
+
+
+
+#TAGS
+> agenti CD&B field agent

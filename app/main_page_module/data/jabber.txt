@@ -1,0 +1,14 @@
+# Jabber
+
+#Account
+-utenza username@crif.net
+
+
+##Problemi
+- Se non si riesce a loggare, deve impostare il username correttamente: <ADusername>@crif.NET. Molte volte impostano .COM
+- Contatta network management
+
+#TAG
+> Jabber
+
+

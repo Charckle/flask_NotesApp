@@ -1,0 +1,7 @@
+# Cuffie
+-se il sistema non riconosce le cuffie, restarta il pc, anche più di una volta
+
+
+
+#TAGS
+> hardware

@@ -1,0 +1,24 @@
+# Utenza CCOM - CRIBIS COM - CRIBIS.com amministrative
+
+!! ATTENZIONE!!!
+cribis.com e cribis.com amministrazione sono due cose diverse. Per cribis.com vedi cribiscomx
+
+## Creazione utenza
+
+-ATTENZIONE - per creazione utenza CCOM bisogna fornire una utenza di riferimento (esenzial per la hierarhia, quando si manda la email ad attivazione clienti)
+-Si deve creare una utenza normale e una ccom - Su SAP PRD
+-La utenza CCOM si crea come da manuale (copia la utenza di riferimento?)
+-Dopo aver creato la utenza si manda una email ad'attivazione clienti, dove si mette la username CCOM della nuova utenza, il username di AD della nuova utenza, e la utenza di riferimento, cosi che possono creare la hierarhia
+-!!!La utenza CCOM dovrebbe essere usata per loggarsi, per questo si deve mandare la password da manuale con il username
+
+# Reset utenza CCOM
+-inoltrare la email a PM_BI
+
+# TAG
+> CCOM attivazione clienti SAP
+
+
+
+
+
+

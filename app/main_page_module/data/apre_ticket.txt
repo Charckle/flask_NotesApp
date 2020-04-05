@@ -1,0 +1,12 @@
+# Apre un ticket o?
+
+- SAP_AMS -> apre un ticket
+- IT system administrator abilitazioni -> non apre ticket
+- Security management -> non ha ticket
+
+
+#TAGS
+> ticket token tokken
+
+
+

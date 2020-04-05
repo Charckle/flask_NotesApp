@@ -1,0 +1,75 @@
+{% extends "main_page_module/base.html" %}
+
+
+{% block extraheader %}
+{% endblock %}
+
+{% block nav_new_entry %}active{% endblock nav_new_entry %}
+
+
+{% block flashes %}
+  {% with messages = get_flashed_messages(with_categories=true) %}
+    {% if messages %}
+      <div>
+        {% for category, message in messages %}
+          {% if category == "error" %}
+            <div class="alert alert-danger" role="alert">
+              {{ message }}
+            </div>
+            <br>
+          {% else %}
+            <div class="alert alert-success" role="alert">
+              {{ message }}
+            </div>
+            <br>
+          {% endif %}
+        {% endfor %}
+      </div>
+    {% endif %}
+  {% endwith %}
+{% endblock %}
+
+
+{% block content%}
+
+{% macro render_field(field, placeholder=None) %}
+<div class="form-group">
+    {% set css_class = 'form-control ' + kwargs.pop('class', '') %}
+
+    {{ field.label }}
+
+    {% if field.errors %}
+        {% set css_class = css_class + ' is-invalid' %}
+
+        {% for error in field.errors %}
+            
+            <small id="{{ field.label.text }}" class="text-danger">
+                {{ error }}
+          </small>
+
+        {% endfor %}
+        </ul>
+    {% endif %}
+
+    {{ field(class=css_class, placeholder=placeholder, **kwargs) }}
+</div>
+{% endmacro %}
+
+
+<div>
+  <div>
+    <legend>New entry</legend>
+
+    <form method="POST" action="{{ url_for('main_page_module.new_entry') }}" accept-charset="UTF-8" role="form">
+      {{ form.csrf_token }}
+      {{ render_field(form.name, placeholder="Enter the name of the new entry",
+                                  autofocus="") }}
+      {{ render_field(form.entry_text, placeholder="Write what stuff", rows='20') }}
+      
+      <div class="form-group">
+        {{ form.submit(class="form-control btn btn-primary mb-2") }}
+        </div>
+    </form>
+  </div>
+</div>
+{% endblock %}

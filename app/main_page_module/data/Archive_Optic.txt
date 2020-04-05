@@ -1,0 +1,13 @@
+# Archiflow
+
+## Dopo l'inserimento del gruppo l'alineamento si fa una volta al giorno dalle 19:30.
+
+- aggiungere al gruppo Archiflow_users o Archiflow_users_wf, se appartiene ad un gruppo di quelli nel report: http://crmreport.crifnet.com/Reports/Pages/Report.aspx?ItemPath=%2fCorporate+services%2fAll+AD+groups+in+Archiflow
+- se non ha nessun gruppo di quelli, scrivere a crmdocumentmanagement@crif.com, se ci possono dire dove abilitarlo. Non rispondomo, ma fanno qualcosa per fargli funzionare archiflow - si apre un nuovo ticket
+
+
+
+#TAGS
+> Archive Optic archiflow
+
+

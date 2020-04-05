@@ -1,0 +1,49 @@
+
+# Selezione del dynamics
+- se chiedono ticketing, si deve creare prima la utenza sul Master e poi creare la utenza sul dynamics, che chiedono
+- se chiedono solo dynamics, si crea la utenza solo su quel dynamics
+
+# Differenza
+- Master hanno bisogno per usare il ticketing system
+- Se sono abilitati ad un dynamics, possono entrare in esso sul ticketing portal, ma non vedranno nessuna coda
+-- per vedere le code, devono essere abilitati alle code nel dynamics, nel quale ci sono le code
+
+
+# MASTER
+- In Master normalmente non si crea una utenza normale, ma si va in Webmembership e se la crea la.
+-- La utenza normale si fa, se hanno bisogno di dynamics SAP, o una cosa del genere
+- name: domain\username
+- Type: internal
+- Email: email
+- Comment: Name Surname
+- -
+- Web Organisation: aggiungi il dynamics per il quale ha bisogno del ticketing
+- Web Roles: 99% è crif - first level
+
+# Finance, International, Imprese, etc
+- New user
+- Name: domain\username
+-- I dati saranno caricati da soli, se il utente esiste
+- Metodo di recapito: seleziona la seconda opzione (sincronizzazione lato server del router e-mail?)
+- -
+- Roles:
+-- Crif - essential Securitz (se c'è)
+-- Crif - first level
+-- Se è Ceco (CZ) e fa parte del Sales team:
+--- CZ First level
+--- Sales Team: accountant crif CZ
+- Team/Queue:
+-- se non hanno selezionato niente, lascia vuoto (non vedranno niente)
+- -
+- Se è Ceco (CZ) e fa parte della Sales Team, bisogna aggiungerlo nel Team.
+-- entra in CrifGroup (dovresti già esserci)
+-- entra nel utente
+-- apri il menu in alto, a destra del nome del utente, con la freccia giù
+-- seleziona Sales Team
+-- Aggiungi nuova entita: CRIF CZ: General ACCOUNT, seleziona Owner
+
+#TAGS
+> 
+
+
+

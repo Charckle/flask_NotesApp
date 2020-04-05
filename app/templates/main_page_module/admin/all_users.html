@@ -1,0 +1,79 @@
+{% extends "main_page_module/base.html" %}
+
+{% block extraheader %}
+{% endblock extraheader  %}
+
+{% block nav_all_users %}active{% endblock nav_all_users %}
+
+
+{% block flashes %}
+  {% with messages = get_flashed_messages(with_categories=true) %}
+    {% if messages %}
+      <div>
+        {% for category, message in messages %}
+          {% if category == "error" %}
+            <div class="alert alert-danger" role="alert">
+              {{ message }}
+            </div>
+          {% else %}
+            <div class="alert alert-success" role="alert">
+              {{ message }}
+            </div>
+          {% endif %}
+        {% endfor %}
+      </div>
+      <br>
+    {% endif %}
+  {% endwith %}
+{% endblock flashes %}
+
+
+{% block content%}
+
+<legend>All Users</legend>
+
+<div id="all_users" class="container">
+  {% for i in users%}
+  <hr>
+  <div class="media">
+      <div class="btn-group btn-group-sm align-self-center mr-3" role="group" aria-label="...">
+        <a href="{{ url_for('main_page_module.view_user', user_id=i.id) }}" class="btn btn-secondary" role="button">View User</a>
+        <button type="button" class="btn btn-outline-danger" data-toggle="modal" data-target="#{{ 'for_modal' ~ i.id }}">Delete user</button>
+      </div>
+    <div class="media-body">
+      <h4 class="mt-0">{{ i.username }}</h4>
+      <p>{{ i.name }}</p>
+    </div>
+  </div>
+
+  <!-- Modal -->
+  <div class="modal fade" id="{{ 'for_modal' ~ i.id }}" tabindex="-1" role="dialog" aria-labelledby="{{ i.id ~ 'for_modaltext' }}" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="{{ i.id~'for_modaltext' }}">Delete the Entry</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          Do you really want to delete the entry "{{ i.name }} - {{ i.username }}"
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          
+          <form method="POST" action="{{ url_for('main_page_module.delete_user') }}" accept-charset="UTF-8" role="form">
+            <input type="hidden" id="id" name="id" value="{{ i.id }}">
+            <button type="submit" class="btn btn-danger">Delete entry</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  {% endfor %}
+</div>
+
+<hr>
+
+{% endblock content %}

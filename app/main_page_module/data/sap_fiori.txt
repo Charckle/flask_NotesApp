@@ -1,0 +1,19 @@
+# Nuova utenza
+- Creare una utenza normale sul PRD, se il utente ancora non l'ha
+-- Impostare CRV -> ZFIORI
+-- Aggiungere il ruolo:
+ZSAP_HCM_EMPLOYEE_APPS
+- Creare una utenza su Fiori
+-- Aggiungere il ruolo:
+ZSAP_FIORI_USER
+Z_GWUSER
+-- se italiano aggiungi:
+ZSAP_HR_TCR_T
+ZSAP_HR_TCR_T_BE0
+-- se foresti aggiungi:
+ZSAP_HR_TCR_T
+ZSAP_HR_TCR_T_BE1
+
+#TAGS
+> sap fiori 
+

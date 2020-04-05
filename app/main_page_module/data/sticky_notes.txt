@@ -1,0 +1,100 @@
+
+SAP:
+PASS HUB0: %rfb20$W
+PASS FIORI: W52guBfD
+PASS CCOM: @Ccsapprd19!-
+p:dis\username
+p:ext\sia062andzubi
+Password2019
+
+CR: L00186
+COMP: C00369
+
+EVO	01
+CVR	CRIF
+CAC	CRIB
+PER	
+TRV_DOCK_TE	1171
+------
+CRIF (if the user is 1002, 1052, 1003) 
+
+-Note Spese
+NWBC_TRIP
+Z_OFFICE
+Z_STRUMENTI
+Z_TE_DIPENDENTE
+
+-Timesheet
+NWBC_CAT2
+Z_OFFICE
+Z_STRUMENTI
+Z_TS_REPORTING_RESP
+Z_TS_UTENTE
+NWBC_ZTSW
+
+-NS+TS
+NWBC_CAT2
+NWBC_TRIP
+Z_OFFICE
+Z_STRUMENTI
+Z_TE_DIPENDENTE
+Z_TS_REPORTING_RESP
+Z_TS_UTENTE
+NWBC_ZTSW
+
+-FIORIac
+ZSAP_FIORI_USER
+Z_GWUSER
+--ce je user na H0P
+ZSAP_HR_TCR_T
+ZSAP_HR_TCR_T_BE0
+--ce je user na H1P
+ZSAP_HR_TCR_T
+ZSAP_HR_TCR_T_BE1
+
+Ruoli da NON copiare:
+Z_MM_RESPONSABILE
+Z_TE_RESPONSABILE
+Z_MM_RIL_ODA 
+
+------------------------------------------------------
+
+AD                                  ADI
+ADOBE                           ADO
+Application Platform      APL
+BPO                                BPO
+CDS Comunity                CDS
+Citrix                               CIT
+Cognos                           COG
+Data Entry                     DEN
+DCOLL                           DCO
+DPROD                          DPR
+Dynamics                        DYN
+ENTERPRISE                    ENT
+FTP                                   FTP
+Genesys                         GEN
+GeoCall                           GEO
+INTERNET                       INT
+ITG                                   ITG
+Jabber                             JAB
+Karthadoc                        KAR
+Livelink                              LLI
+Modifica TK                    TKM
+MyCrif                             MCR
+NF                                   NFO
+NIBID                               NIB
+ORACLE                            ORA
+Outlook                              OUT
+Portale Finance                  PFI
+Press Review                     PRE
+PRINTER                            PRI
+Protocol                            PRO
+SAP                                    SAP
+SAS access                        SAS
+Share                                 SHA
+UAENET                             UAE
+VPN                                   VPN
+WF Privati                         WPR
+
+#TAGS
+> sticky notes

@@ -1,0 +1,62 @@
+# Aggiungere una utenza
+- Se ti danno una utenza da sostituire, vedi se la vecchia utenza ha qualche ora aggiunta nel monitoraggio del mese.
+-- Se non ha ore aggiunte, sostituire il nome nuovo per quello vecchio nel file "Lista Attivita"
+- Salvare la Lista Attivita, ma lasciarla aperta durante le aperture dei monitoraggi sotto
+- Apprire, salvare e chiudere il file Monitoraggi, cosi che si refrehino le connessioni
+
+# Voci Primarie
+- se si deve aggiungere delle voci, copiale nel file Lista Attivita MESE
+- Vai ad aprire i file monitoring OP e TL, e salvali, cosi che si aggiornino
+
+# Voci secondarie
+- si apre il file monitoraggio del gruppo, e si aggiunge un link sotto le attivita secondarie, che punta sulla lista attivita/sulla voce da inserire
+
+# Voci Primarie - Creazione
+- Si deve copiare tutta la righa della voce (dal "Gruppo fino a "percentuale errori"), e spostarla in OLD
+- Poi si fa delete sulla righa della voce, e poi si copia tutte le righe una in su (seleziona tutte, copy/paste)
+
+# CRM BO
+- Creiamo le cartelle dopo il 5. del mese per il mese precedente (in 6. febraio creiamo la cartella per gennaio)
+
+# Debugging
+- Se il file di monitoraggio TL non si aggiorna, si deve aprire il file Monitoraggio Operatori, enable editing, lasciarlo apperto e aprire il file Monitoraggio TL, e fare enable monitoring
+- Se trovano un #REF! nel monitoraggio risorse, e perche hanno fatto copy/paste da qualche parte.
+-- Trova la cella con il #REF e tira giu quella di sopra, per riaggiornare la cella problematica.
+-- Salva, proteggi, add sharing - DONE
+
+# lock
+- il file errori deve essere loccato - tutti e due i folgi
+- il file monitoraggio operatori deve essere loccato e loccato per il share
+
+# Ferie
+- si lancia il batch per la creazione dei file
+- si fa il update dei link nel file ferie dei operatori
+- si fa il Protect sheet sulla pagina delle ferie Operatori
+
+# Power BI
+## Una volta al anno
+- si copia il file che ci mandano nel nostro percorso di Power BI, sotto il dipartimento del file
+- in Power BI Desktop si apre le Querries, e si copia le tre querries, nominarle con il anno alla fine. In questi nuovi querri cambiamo il source, puntandolo sul nuovo file, che abbiamo caricato
+(questo facciamo, perche e piu veloce che creare una nuova querri per i dati del nuovo anno)
+- Facciamo "hide" nella schemrata primaria, dove ci sono le querry, cosi che gli utenti non le vedono
+- Salviamo & Exit
+
+# Una volta al mese
+- Cambiamo il file che ci mandano, con il file precedente (ma del stesso anno). Il file che ci mandano dovrebbe avere tutti i dati precedenti, più quelli nuovi
+
+#TAGS
+> koper reporting monitoraggio report
+
+
+
+
+
+
+
+
+
+
+
+
+
+

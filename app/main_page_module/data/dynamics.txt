@@ -1,0 +1,32 @@
+# Search
+- WEBMEMBERSHIP: search funziona con DOMINIO\utenza
+- NORMAL search funziona con nome/cognome
+
+# Nomi server
+
+-D&B - crifGroup - imprese
+
+# Abilitazioni ticketing
+
+-Utenza WEBMEMBERSHIP su MASTER
+-Utenza NORMALE su gli dyn
+
+# Abilitazione CCB
+-Abilitare a crifGroup e aggiungere i due CZ security groups
+
+# Members vs Auditors
+- I membri possono gestire i ticket, mentre i Auditors gli possono solo vedere
+
+## Aggiungere Auditors a un Team
+- Sicurezza ->> Team ->> Connession ->> Connetti ->> e aggiungi una nuova utenza come Auditor
+
+# TAG
+> dynamics ticketing, master
+
+
+
+
+
+
+
+

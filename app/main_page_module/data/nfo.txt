@@ -1,0 +1,34 @@
+# network drive
+
+- S T - si aggiungono con i gruppi standard di AD
+- I U G N W - aggiungi il gruppo e abilita a cntfs
+- W\BPO\ROBOTICA - aggiungi in AD: sec_fsshare_voldati7_bpo_robotica_r / _w
+- ACCESSO: Z:moduli_lavoro etc - si scrive per aggiungerli nello share 17
+- Visionnet V, G - aggiungi in AD IEFS01-data-ro \ -rw
+- Datatutt Voldati8 - si mappa localmente via explorer, oppure si dice che devono contattare il loro HD locale
+-Visibilità dell'archivio K:/Dito/Sistemi e relative sottocartelle è garantito attraverso l'appartenenza dell'utenza al gruppo CRIFNET/Product Management, già effettiva. Stesso discorso per gli altri colleghi dell'ufficio Sistemi, che hanno i gruppi CRIFNET/Technology Management, CRIFNET/Network Management, e così via.
+
+SASSRV 01, SASSRV 02 - come da manuale
+-!- Dipartimento per SAS: Technology Management
+- non scordarti di scrivere a technical backoffice per il aggiornamento del DBUSER
+
+
+SASSRV 03
+- scrivere a technology mangement
+
+# SHARE mapping
+map network drive -> \\share.crifnet.com\docs\<sharenumber>
+
+#TAGS
+> nfo nfts cntfs bpo robotica visionet
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,31 @@
+#Attivazione clienti
+IT
+no ticket
+
+## URGENT! Always add the AD username of the user!
+
+##Abilitazioni
+
+- CDES - utenza di riferimento
+- CFS - utenza di riferimento
+- CMS
+- REMA - utenza di riferimento
+- Data entry privati
+- Crif Valutazione Immobili - Management console (gestionale)
+- Crif Valutazione Immobili - gestione perizie
+- Crif.TP.CMC.Console
+- BPO - Utente BPO Master, etc
+- WFPRIVATI
+- Credem Creacasa
+
+
+#Utenze 9999
+- gli vengono assegnate le abilitazioni della utenza di rete normale
+
+
+
+
+
+
+
+

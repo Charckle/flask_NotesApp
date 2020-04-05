@@ -1,0 +1,22 @@
+# Ripristino immagine
+- si lancia il programma dal USB, che copiera l'immagine sul disco del PC
+- nel programma si trova l'immagine del pc, che vogliamo ripristinare
+- BURNIT!
+
+# Aggiungimento del PC nel DOMAIN
+- dopo avere una fresca immagine sul PC, si deve mettere il PC nella domena, cosi che puoi funzionare
+- Explorer -> This PC -> Properties -> Change Settings -> Change
+- Inserire nome del PC (sulla targetta, aka SIKLPL02145)
+- inserire nel WorkGroup "WORKGROUP"
+- Chiedera la conferma di un amministratore
+- Fare il restart
+- dizinserire il PC dal WorkGroup e rientrarlo nel Domain "ext.crifnet.com" (se pc per ext)
+- salvare, riinviare il PC
+- DONE
+
+
+
+
+#TAGS
+> ripristiono immagine su disco PC
+

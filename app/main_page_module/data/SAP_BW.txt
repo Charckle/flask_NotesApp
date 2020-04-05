@@ -1,0 +1,10 @@
+# Profile
+- se chiedono una utenza su SAP BW, ma il profilo, che hanno selezionato non si trova nei profili del BW, mandare una email a SAP BW è chiedere quale profilo aggiungere
+
+# Aggiornamento DBUSER
+- quando si aggiunge o rimuove le persone da SAP BW, si deve aggiornare il DBUSER
+-- Inviare mail a BackOfficeTecnico in caso di creazione nuova utenza o dimissione utenza da DBUser
+
+#TAGS
+> SAP BW
+

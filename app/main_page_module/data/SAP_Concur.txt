@@ -1,0 +1,8 @@
+# SAP Concur
+
+-si contatta sap ams per informazioni, oppure da jabber Zanoli o Messina
+-probabilmente ha bisogno di sap prd, fiori con timesheet
+
+
+#TAGS
+> SAP Concur

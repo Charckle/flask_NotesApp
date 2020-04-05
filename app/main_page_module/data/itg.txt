@@ -1,0 +1,17 @@
+#Timesheet
+
+- sempre inserire Export to SAP
+- Creazione ORG UNIT - Corporate Services
+- creazione resource pool per ITG
+- aggiungere un gruppo per notifice, quando un PPM progetto sia stato creato ->> corporate
+
+# Change resource poll
+-PPM Dashboard : Search - Administration - Resources - search username - manage participation - ADD Participation - Nearshore Slovakia - metti 100% - metti la data di oggi,dopo fai edit e cambia , togli il vecchio Resource Pool (EDIT ,remove,save)
+
+
+#TAGS
+> itg
+
+
+
+

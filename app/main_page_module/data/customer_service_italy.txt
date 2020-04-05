@@ -1,0 +1,10 @@
+# Customer service italy
+- GRS (si fa in automatico se scegliono nel BIS)
+- cribis.comx (si fa in automatico se scegliono nel BIS)
+-- CRIBISCOMX, supervisor (!!ATTENZIONE cribis.com  == CRIBISCOMX, ma se chiedono cribis.com amministrative, vedi sap ccom)
+
+
+
+#TAGS
+> customer service italy
+

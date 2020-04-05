@@ -1,0 +1,63 @@
+#RANDOM
+
+- tivoli storage manage (TSM) - aggiungi nel gruppo "it gestione tsm"
+- AIP (azure information protection) - aggiungi nel gruppo "adrms" -> se c'è un problema rivolgersi Security management o product management
+- TFShub.crifnet.com - abilita il owner del projetto
+- File utenze password: adm
+- no address -> non si usa per CRIF S.p.A, per gli altri si (Varignana etc)
+-CRIF SHAREPOINT - SP_Extusers (quando chiedono accesso e non hanno l'utenza, va creata solo in AD e inserito quel gruppo ; nomenclatura utenza ESxxxxx...)
+- GT Portal (https://mycrif.crifnet.com/dpt/SS-1/ra/SitePages/Application%20Management%20Processes.aspx) - scrivere direttamente a Davide Di Mattia (non gestisce nessuna coda,le abilitazioni del genere le fa solo lui e non corporate). Se il URL è mycrif.com/dpt/ss-1 = lo gestisce Davide Di Mattia
+- NAC_39WIFIMOBSTD - da il permesso di connettersi su WiFi ( Network name : CGMOBILE, Security : 802.1x EAP , EAP Method : PEAP , Identity/user: AD account , Password : AD pwd, CA Certificate : DO NOT VALIDATE)
+- ORGANIGRAMMA - deve avere ID crif in AD + GlobalHR gruppo
+- HRSpace -> Persamm <persamm@crif.com>
+- GEOCALL - quando resetti la pwd, devi togliere anche la data del "ultimo accesso"
+
+- VAULT archive from web GUI -  http://evarchive.crifnet.com/enterprisevault/search.asp
+- Vault AD group: archive_exchange_crifgroup
+- Aggiornamento profili - devono contattare IRMD (o rivolgersi ad HR/Hiring)
+- Revisione dei profili autorizzativi ->> togli le abilitazioni come da manuale dimissioni
+- CDS community ->> le abilitazioni le fanno i singoli PM
+- utenza non visibile su RSA Server ->> si deve muovere la utenza su AD in User Accounts
+- ORACLE spaces aaS monthly report ->> Ago??
+- Jenkins -> reg 503
+- Dash Report -> ti devono dare il link, se non non sai dove abilitarli
+- Audit -> ti devono dare il link, se non non sai dove abilitarli
+
+- ECAI rating - per la abilitazione si deve compilare un REG 517 CRA
+- CONFLUENCE - si deve aggiungere le persone nel gruppo ConfluenceUsers
+
+- https://sts.crifnet.com/adfs/portal/updatepassword/   ->  per modificare la password. Ti può spuntare fuori quando delle peersone cercano di loggarsi su SAP tramite WEB
+
+
+# SHARE
+-Workflow error - se utenza risulta disattivata , se in un gruppo aggiunto risulta una utenza disattivata, se l'utenza ha cambiato il dominio ; scrivi a CORPORATE
+
+
+#TAGS
+> random file utenze template noaddress varie vario
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

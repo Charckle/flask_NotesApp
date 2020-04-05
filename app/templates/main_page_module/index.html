@@ -1,0 +1,106 @@
+{% extends "main_page_module/base.html" %}
+
+{% block extraheader %}
+{% endblock extraheader  %}
+
+{% block nav_index %}active{% endblock nav_index %}
+
+
+{% block flashes %}
+  {% with messages = get_flashed_messages(with_categories=true) %}
+    {% if messages %}
+      <div>
+        {% for category, message in messages %}
+          {% if category == "error" %}
+            <div class="alert alert-danger" role="alert">
+              {{ message }}
+            </div>
+            <br>
+          {% else %}
+            <div class="alert alert-success" role="alert">
+              {{ message }}
+            </div>
+            <br>
+          {% endif %}
+        {% endfor %}
+      </div>
+    {% endif %}
+  {% endwith %}
+{% endblock flashes %}
+
+
+{% block content%}
+<h1>Hello, there!</h1>
+<input class="form-control mr-sm-2" id ="search" type="search" placeholder="Search" size="50" aria-label="Search" autofocus="">
+<hr>
+<div class="container">
+  <div id="results">
+    <p>Now search something!</p>
+  </div>
+</div>
+<script>
+  
+  function load_results(){
+    var search_key = document.getElementById("search").value;
+
+    var results=[];
+
+    $.post('/search/', {"key": search_key}, function(data, textStatus) {
+      //data contains the JSON object
+      //textStatus contains the status: success, error, etc
+
+      var searchResults = document.createElement("div");
+      searchResults.setAttribute('class', 'container');
+      var count = Object(data);
+      console.log(count);
+
+      if (0 < Object.keys(data).length) {
+
+        for (const [key, value] of Object.entries(data)) {
+          var newMedia = document.createElement("div")
+          newMedia.setAttribute('class', 'media  bg-light');
+
+          var newBodyLink = document.createElement("a")
+          newBodyLink.setAttribute('class', 'btn btn-secondary align-self-center mr-3');
+          newBodyLink.setAttribute('href', '/view_entry/' + value[0]);
+          newBodyLink.textContent = "View the content";
+
+          var newBody = document.createElement("div")
+          newBody.setAttribute('class', 'media-body');
+
+          var newBodyTitle = document.createElement("h5")
+          newBodyTitle.setAttribute('class', 'mt-0');
+          newBodyTitle.textContent = key;
+          var newBodyText = document.createElement("p")
+          newBodyText.innerHTML = value[1];
+
+          var line = document.createElement("hr")
+          
+          newBody.appendChild(newBodyTitle);
+          newBody.appendChild(newBodyText);
+          
+          newMedia.appendChild(newBodyLink);
+          newMedia.appendChild(newBody);
+          
+          searchResults.appendChild(newMedia);
+          searchResults.appendChild(line);
+          
+        }
+
+      } else {
+        var noResults = document.createElement("p")
+        noResults.textContent = "We searched high and low, and we found nothing... its clearly because you were not specific enough.";
+        searchResults.appendChild(noResults);
+      }
+
+      $("#results").empty();
+      document.getElementById("results").appendChild(searchResults);
+    }, "json");
+
+  };
+
+  document.getElementById("search").onkeyup = load_results;
+
+</script>
+
+{% endblock content %}

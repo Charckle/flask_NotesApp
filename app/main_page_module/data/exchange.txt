@@ -1,0 +1,23 @@
+- OWA - https://owa.crifgroup.com/
+
+# shared mailbox
+## Creazione
+- si crea una utenza Shared su Exchange
+- si aggiunge il attributo 14: applicationuser
+## Cancellazione
+- si seleziona disable su exchange
+- si inserische nel file dimmisioni
+- altro non si tocca
+
+
+# Gruppi
+- creare come da manuale
+
+
+#TAGS
+> exchange
+
+
+
+
+

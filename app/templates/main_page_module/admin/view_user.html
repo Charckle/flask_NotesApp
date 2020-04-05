@@ -1,0 +1,88 @@
+{% extends "main_page_module/base.html" %}
+
+{% block extraheader %}
+{% endblock extraheader  %}
+
+{% block nav_index %}active{% endblock nav_index %}
+
+
+{% block flashes %}
+  {% with messages = get_flashed_messages(with_categories=true) %}
+    {% if messages %}
+      <div>
+        {% for category, message in messages %}
+          {% if category == "error" %}
+            <div class="alert alert-danger" role="alert">
+              {{ message }}
+            </div>
+          {% else %}
+            <div class="alert alert-success" role="alert">
+              {{ message }}
+            </div>
+          {% endif %}
+        {% endfor %}
+      </div>
+      <br>
+    {% endif %}
+  {% endwith %}
+{% endblock flashes %}
+
+
+{% macro render_field(field, placeholder=None) %}
+<div class="form-group">
+    {% set css_class = 'form-control ' + kwargs.pop('class', '') %}
+
+    {{ field.label }}
+
+    {% if field.errors %}
+        {% set css_class = css_class + ' is-invalid' %}
+
+        {% for error in field.errors %}
+            
+            <small id="{{ field.label.text }}" class="text-danger">
+                {{ error }}
+          </small>
+
+        {% endfor %}
+        </ul>
+    {% endif %}
+
+    {{ field(class=css_class, placeholder=placeholder, **kwargs) }}
+</div>
+{% endmacro %}
+
+
+{% block content%}
+
+<legend>Username: <b>{{ user.username }}</b></legend>
+
+
+<hr>
+{% with errors = get_flashed_messages(category_filter=["error"]) %}
+    {% if errors %}
+        <div>
+            {% for error in errors %}
+                {{ error }}<br>
+            {% endfor %}
+        </div>
+    {% endif %}
+{% endwith %}
+
+<form method="POST" action="/admin/modify_user/" accept-charset="UTF-8" role="form">
+    {{ form.csrf_token }}
+    {{ form.id }}
+    
+    
+    {{ render_field(form.name, placeholder="Users name",
+                                autofocus="") }}
+    {{ render_field(form.email, placeholder="Email") }}
+    {{ render_field(form.password, placeholder="Password") }}
+    {{ render_field(form.password_2, placeholder="Repeat password") }}
+
+    <br>
+    <div class="form-group">
+    {{ form.submit(class="form-control btn btn-primary mb-2") }}
+    </div>
+</form>
+
+{% endblock content %}

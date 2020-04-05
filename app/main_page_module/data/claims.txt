@@ -1,0 +1,32 @@
+#Claims problemi
+
+per i problemi con i claims si scrive a Brumali Simone.
+
+# Admin
+-se hanno problemi di accedere con la utenza admin, andiamo su production, vediamo se l'utenza è attiva, se e, cambiamo la password con una complessa (si manda la complessa con la mail è poi se la cambiano da soli al primo login)
+
+#Upload index
+
+##Test, Treninig
+
+- appriamo il file e sostituiamo i " |" e "| " con "|"
+ - !!!! nel file di trening la riga 3878 e duplicata !!!
+- andiamo sul ambiente e validiamo il file per verificate, se e correttamente impostato
+- carichiamo i file nel portale
+- rispondiamo a HD
+
+##Production
+
+- facciamo tutto come sopra, ma invece di caricare i file, gli mandiamo a IT monitoring che lo fanno loro quando gli uffici in UK sono chiusu (il giorno prossimo di mattina)
+- dopo aver mandato la email, giriamo il ticket a IT monitoring ticket
+- quando ci girano il ticket indietro scriviamo a HD UK
+- chiudiamo anche il ticket sulla coda BOT_KOPER
+
+# Licenze
+-se arrivano ticket per le licenze, si gira il ticket sulla coda BOT_KOPER del international, e dice a Peter (o Alan?), che sono arrivate delle licenze
+
+#TAGS
+> claims rapid index licenze
+
+
+

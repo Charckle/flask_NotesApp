@@ -1,0 +1,14 @@
+#Riavviare un Reg andato in errore
+
+Cercare il Reg, editarlo (Modifica elemento) e mettere sé stessi come coordinator, in modo che ci arrivi la notifica.
+Poi cercare di nuovo il Reg e andare su:
+-> Avanzate -> Flussi di lavoro -> REG 517
+e cliccare Inizia.
+Quando torna in stato Approval, rimettere il coordinator iniziale e mandarlo avanti.
+Se ci si dimentica di mettere sé stessi come coordinator e il Reg resta fermo in attesa di approvazione, andare in delegate e cambiare il coordinator.
+
+
+
+
+#TAGS
+> error errore reg mycrif

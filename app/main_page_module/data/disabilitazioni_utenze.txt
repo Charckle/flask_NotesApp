@@ -1,0 +1,20 @@
+== Disabilitazione utenze - dimissioni ==
+
+#Utenza AD:
+
+- Su EXCHANGE si seleziona Disable sulla casella postale
+- Su AD si rimuove i gruppi, fà Disable sull'utenza, sposta nella caella Disabled Accounts
+- Controlla si, se ha SAP, DYN, etc
+-- Per DYN disabilitazioni, si deve contattare il dipartimento ???
+- Dopo la disabilitazione dell'utenza, si deve riimpostare il Attribute14: User
+
+#
+- Portale documentale: se la persona la il attributo, cancellalo
+- My crif: va via con AD
+- My cloud: product management
+
+#FIN
+
+Alla fine si deve sempre compilare il file dimissioni in "K:\KOPER\IT Koper\Sviluppo\File_Sviluppi\DIMISSIONI\Dimissioni"
+
+

@@ -1,0 +1,21 @@
+# Skyminder External user on dynamics
+
+- Crea si una utenza per esterni sul dynamics MASTER
+- Name: 3XXXXXXX (numero conseguitivo come dalla lista utenze)
+- Type: External
+- Email: email della utenza responsabile
+- Password to be set: Password2019
+-- Per impostare la password si deve salvare la utenza, dopo il impostaggio della "Password to be set", chiuderla e riaprirla.
+-- Poi si va sui tre punti "..." -> Essegui flusso di lavoro -> Aggiungi
+-- Se l'impostamento e stato eseguito correttamente, la password nella riga "Password to be set" deve scomparire, e la Hash deve cambiare
+-Aggiungere il il Web Roles "CRIF - First - External ticketing"
+-Aggiungere il Web organisation "crminternational"
+-Manda si emal a "CRM focal point" per creazione utenza Skyminder sul Dynamics international. Trova una email gia mandata e copia.
+-Manda le nuove credenziali
+
+# RANDOM
+- Skyminder Dynamics queues - se chiedono di essere abilitati alle code ma allo stesso momento di non farne parte, diciamo di rivolgersi a Corporate Services
+
+#TAGS
+> skyminder external dynamics
+

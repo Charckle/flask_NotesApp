@@ -1,0 +1,9 @@
+# Network folders
+
+## Abilitazioni
+
+-datatran -> Unknown?
+
+# Problemi
+-se non si possono connettere su un server con Explorer locale -> network management
+-se non si possono connettere su un server con Explorer di citrix -> product management

@@ -1,0 +1,36 @@
+# Dipartimenti
+
+# Product
+- riattivare email, more GB on mailbox, cambiare di Domain
+- non riesce aggiungere il PC sul dominio (utenza admin)
+- estrazione utenti da una casella postale/gruppo
+- utenza bloccata ogni X minuti
+
+-Brizzante Simone 
+-Squerzani Filippo
+
+# Network management
+-VPN
+
+-Piccoli Francesco
+
+# HR hiring dissmisal Koper
+-Ulrih Sonja
+
+# Corporate Service
+- visualizazzione 503 e altri su MyCrif
+-Dynamics e/o il ticketing non funzionano; share che vanno in Error, errori con mycrif
+- problemi compilando un REG su mycrif
+
+# Reporting BI Team
+- crs.crifnet.com abilitazioni
+
+# TAG
+> dominio
+
+
+
+
+
+
+

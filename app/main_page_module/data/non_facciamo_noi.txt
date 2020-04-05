@@ -1,0 +1,32 @@
+# Non facciamo noi
+
+-TFS hub.crifnet.com -> abilita il owner del progetto
+-Reporting - si manda a Reporting BI Team, con utenza di riferimento o le caselle alle quali abilitare. Gli apre un ticket
+-Inbox size -> si deve fare il archivio o contattare Product manangement
+-International calls -> local HD -> Network management, non facciamo noi
+- aggiornare la lista di contatti (CTI Telefonia) - cti.support@crif.com
+
+##Lasciamo stare
+-HRSUITE
+-HR online
+-HR Attendance
+-HR Organigramma ->> fanno Hiring
+-Controllo accessi
+-Cognos
+-cribis.facebook.com
+-Reporting services ->fanno da bologna, non facciamo noi
+-Zucchetti -> HR, non facciamo noi
+-Karthadoc - non si pa più
+
+
+# TAGS
+> non facciamo non abilitiamo facebook cribis
+
+
+
+
+
+
+
+
+

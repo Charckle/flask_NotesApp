@@ -1,0 +1,16 @@
+# Variazioni
+
+- se il reg non si è stato creato sulla coda BOT_KOPER VARIAZIONE, si fare il forward BOT_VARIAZIONI@crif.com
+
+##disabilitazione a Projetti share
+-si deve contattare tutti gli project manager e dirgli, che devono rimuovere il utente dai projetti
+
+
+#reg 517 notes:
+Richiesta modifica alle abilitazioni a seguito di Variazioni (mese anno) - <ticket_numer, aka: CAS-2002809-F2Q1T7>
+
+#TAGS
+> share projetti project variazioni
+
+
+

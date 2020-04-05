@@ -1,0 +1,8 @@
+# Macchina ponte BWPONTE - User BPO
+
+#Creazione utenza
+Per la creazione della utenza su una delle macchine, si deve solo creare una utenza sulla numero 6
+
+
+#TAGS
+> macchine ponte

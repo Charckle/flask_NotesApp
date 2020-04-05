@@ -1,0 +1,6 @@
+Per accedere a IFSVIL01 (ifsvil01.icc.crifnet.com), il utente deve avere il profilo VPN "SVILUPPO"
+
+
+
+#TAGS
+> vpn

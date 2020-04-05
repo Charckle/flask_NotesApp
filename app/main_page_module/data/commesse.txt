@@ -1,0 +1,71 @@
+# Creazione commesse mirror
+
+##Commesse speciali
+
+- GLOBAL TECH INDIA CRIFSOL: 81E_BAI , profit 81PC02BU04	
+- Slovak IT solutions: CDC 49SWD , profit 49SWIT
+- IT solutions DCK Poland (si deve creare tutte e due le mirror):
+-- 61DCK , profit 61PC01BU05
+-- 61E_BAI , profit 61PC1BU02
+- WWCC1 - CB International CCB: 56CBOS, profit 56CBS
+- WWCC1 - CB International SCB: 49CBS, profit 49CBS
+- WWCC2 - BI INDIRECT CCB: 56B2B, profit 56BI
+- WWCC2 - BI INDIRECT SCB: 49BI, profit 49INFIN
+- WWCC3 - CCS CCB: 56DSS, profit: 56DSS
+- WWCC3 - CCS SCB:	49DSS, profit:	49DSS
+- WWCC7 - Analysts HUB Poland: 61HUB , profit 61PC01BU03
+
+
+# Approvazione PCEF di commesse
+- PCEF Approval lo fanno PBC. Chiedi a mirko o guido, se possono scriverli
+
+# Commesse riaperte
+- Quando si riapre una commessa, si deve dare (non tutte le volte?) Simona Bedonni in cc è scrivere, che ci deve lei dire quando chiuderla, se no la chiudiamo dopo 8 giorni e si deve creare un nuovo ticket per riaprire la commessa.
+
+# Cambiamenti delle commesse
+- per vedere le modifiche delle commesse, si entra nella commessa e apre il menu in alto: Ambiente ->> documennt. di modifichè -> quel report che ti serve
+
+# Commessa PRCO
+- se una commessa è di tipo ordine PRCO mancheranno qualchedati: dati generali>fine lavoro
+
+# Commessa prodotto
+- tipo: 26_XXXX
+- non si abilita le persone su di essa
+
+# Chiusura commesse
+- aspetta il mese successivo per chiuderla
+- usa le note nel quaderno
+- ZTS_REPORT_ADMIN -> per vedere se ci sono ore sulla commessa
+
+## Chiusura di una commessa creata per sbaglio
+- Per il momento contatta Guido o Mirko
+
+# Type internal order
+- O = OUTS  > Outsourcing
+- V = VTSE  > Vendor and selection
+- S = SSW   > Sviluppo software
+- I = SSW   > Sviluppo software
+- F = SSW   > Sviluppo software
+- T = SSW
+- P = PRCO  > Commesse protorri Di Co
+- E = EVCO  > Eventi Di Co
+- D = SMOD  > Sviluppo modelli
+- C = CONS  > Consulenze
+- M = MAST  > Manutenzione Straordinaria
+- G = MAOR    > Manutenzione Ordinaria/Gestione
+
+# CHANGE
+- quando si deve cambiare il PM di una commessa, si deve cambiarlo per tutte le mirror
+- se si deve cambiare il progetto della commessa, si:
+-- cambia profit della commessa primaria
+-- spostare le commesse da un progetto al altro
+
+# ERRORI
+- se non puoi scrollare sulla commessa, devi inserire il tipo commessa a CS
+
+# Random
+- giorni CCS --> GG Stimati analisi system
+- giorni CRIF --> GG Stimati sviluppo
+
+# TAGS
+> internal order commessa comessa comesa commesse

@@ -1,0 +1,6 @@
+
+- Correct databases: https://share.crifnet.com/docs/34/Documents/Projects/Oracle Enterprise User Security/EUS - Gruppi AD Roles - DB - BOT.xlsx?d=w7e2d56bda1784f74b4df501a4e745b01
+
+
+#TAGS
+> sql oracle databases

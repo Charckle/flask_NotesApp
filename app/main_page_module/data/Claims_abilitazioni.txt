@@ -1,0 +1,59 @@
+# CLAIMS Abilitazioni
+
+Production:
+Username: crif_monitor
+Password: rapidcs15
+
+Test, training:
+Production:
+Username: crif_monitor
+Password: rapidcs14
+
+## Test - A2A integration
+
+-Si aggiunge la organizazione nel Excel al ultimo numer
+-Si crea l'utenza sul portale Test (A2A integration) con selenium e firefox (vecchio modello)
+--Inserisci nel stepConfigure il organization ID (as: 532 - senza le "00" di fronte)
+--Imposti velocita MINIMA è lanci.
+
+-Se fa qualche errore e non crea tutte le utenze (00XXX_su il più delle volte), imposti che inizi nel blocco dove crea le utenze e lo lanci.
+--se crei le _su utenze per una organizazione già esistente, imposti le credenziali della utenzza nel stepConfigure e lanci SOLO quell blocco.
+--poi lanci solo i pezzi dei blocci, che creano quelle utenze (_su, etc)
+
+-Dopo aver creato le utenze, devi modificare la password per le utenze _ch e _su loggando ti con esse. Le password default sono "password123"
+-Poi si deve aggiornare il Index (tutti due), aggiungiendo la nuova organizazione.
+--Aggiunge si una nuova riga tipo: COMP527|Virgin Media|COMP527|Virgin Media|COMP527|Virgin Media (E SEMPRE COMP<numero>)
+
+-si manda la email con le credenziali
+-si risponde a HelpDesk
+-si aggiunge nel file dei casi CLAMS fatti e scrive la SCADENZA nel reg
+
+## Production
+
+- fai un check se l'utenza già esiste
+- compila il excel con la nuova utenza
+- lancia Rapid_Designer/CreditFlow_Design dalla Enterprice webapp
+- copia la utenza L00186 per CR o C00369 per COMP
+- sotto il tab Search Option rimuovi la vecchia organizazione sotto SUBTREES e aggiungi la nuova
+- Sotto il tab General inputta User ID(la nuova utenza, aka G00585_a2a), Name(A2A), surname(System)
+- Aggiungi la nuova Organization
+- Select This user in Enabled
+- Finisci il utente è salvati la password temporanea
+- Rillogati in Rapid_Designer con la nuova utenza, e cambia la password su quella stipulata nel file excel
+- Manda le credenziali al utente (quando mandi la password, non aggiungere il token)
+- Scrivi a HelpDesk, che è fatto
+- Compila il file SCADENZE per il ticket
+
+# TAG
+> claims index
+
+
+
+
+
+
+
+
+
+
+

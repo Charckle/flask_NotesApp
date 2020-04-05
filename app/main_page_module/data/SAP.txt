@@ -1,0 +1,75 @@
+# transazioni
+- ZCARAT -> ricerca commesse. manuale ZCARA guarda inserimento SAP_ZCARAT
+- KOH2 - cerca negli projetti per le commesse
+- KS03 - CDC -> profit center
+- SUIM - search
+- ZFCK - vedi i ruoli per Business Trip Approver
+- web link: https://sapweb.crifgroup.com/nwbc
+
+
+# Errori
+- Problemi con SAP via VPN -> aggiungere la transazione NWBC_SMEN
+- a master record for exists only in -> SAP_AMS
+- nierrset sap error network error logon -> local helpdesk? o firewall?
+- problemi ad accedere a NetWeaver -> reset password PRD
+- non vede la commessa in PPM, lo deve aggiungere ITGadmin nel progetto
+## Abilitazione rilevazione CATS non consentita
+- Check se ha i timesheet roles
+- check se il utente è attivo
+- check se ha il codice 22* (se è dipendente)
+- - vai in pa30 -> valori default timesheet ->
+- - rilevazione = 1
+- - tipo rilevazione = T
+- - Tipo CID = 1 (cid matricola)
+
+
+# Random
+- cambia linuga -> apri il menu nela finestra dove selezioni il SAP server
+- maternita -> gira a timesheet team e metti Guido e Mirko in CC, cosi che escludino il utente da altri solleciti (oltre quelli che fa ITGTsSupport)
+- Reset password Analysis for Excel = SAP BW
+- SAP H1P o ZMRG - reset pwd, accesso o sblocco utenti sap in H1P o ZMRG_LOGIN inoltriamo il ticket a sap_merge_support@crif.com e in cc SAP_AMS.
+- Se non riescono a lavorare su un file estratto da SAP, gira il ticket a Product
+- Problemi caricare timesheet tramite sa38 -> Timesheetteam
+- codice rilascio ->> gira a Giorgia
+
+# Timesheet team
+- Antinori Mirko, Paltrinieri Guido
+
+# History
+- in P20/30 si seleziona il valore nei "Dati di base persona", e poi si spinge il bottone con le montagne, vicino il bottone con gli occhiali
+
+# Ruoli da NON copiare
+- Z_MM_RESPONSABILE
+- Z_TE_RESPONSABILE
+- Z_MM_RIL_ODA
+- FI_ATTIVITA_FERIOLI
+
+#tags
+ > sap Analyzer
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

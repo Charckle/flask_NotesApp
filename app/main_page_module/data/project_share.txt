@@ -1,0 +1,11 @@
+# project.crifnet.com
+
+- apri webapp - Spreadsheet
+- seleziona projects
+- cerca la persona con fullcontrol o contribute with permission
+- trova la persona, che ha tutti e due Permissin lvl e gli scrivi, oppure scrivi nei notes che se hanno bisogno della abilitazione, devono scrivere a questa persona
+
+
+
+#TAGS
+> project crifnet
