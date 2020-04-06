@@ -1,6 +1,6 @@
 # Import flask dependencies
 from flask import Blueprint, request, render_template, \
-                  flash, g, session, redirect, url_for, jsonify
+                  flash, g, session, redirect, url_for, jsonify, send_file
 # Import the database object from the main app module
 from app import db
 
@@ -12,29 +12,49 @@ from app.main_page_module.models import User
 #import os
 import re
 import os
+import zipfile
+import io
+import pathlib
+from functools import wraps
+import datetime
+
 
 from app.main_page_module.argus import WSearch
 
 # Define the blueprint: 'auth', set its url prefix: app.url/auth
 main_page_module = Blueprint('main_page_module', __name__, url_prefix='/')
 
+#login decorator
+def login_required(f):
+    @wraps(f)
+    def wrapper(*args, **kwargs):
+        if 'user_id' in session:
+            return f(*args, **kwargs)
+        
+        else:
+            flash("Please login to access the site.", "error")
+            
+            return redirect(url_for("main_page_module.login"))
+    
+    return wrapper
+
+
 #login check
 def check_login():
     if "user_id" not in session:
         return True
-        
     
 # Set the route and accepted methods
 @main_page_module.route('/', methods=['GET', 'POST'])
+@login_required
 def index():
-    if check_login(): return redirect(url_for("main_page_module.login"))  
+    #if check_login(): return redirect(url_for("main_page_module.login"))  
 
     return render_template("main_page_module/index.html")
 
 @main_page_module.route('/search/', methods=['POST'])
+@login_required
 def searc_results():
-    if check_login(): return redirect(url_for("main_page_module.login"))  
-    
     key = request.form["key"]
     
     banana = WSearch()
@@ -50,9 +70,8 @@ def searc_results():
     return jsonify(results)
 
 @main_page_module.route('/delete/', methods=['POST'])
+@login_required
 def delete_entry():
-    if check_login(): return redirect(url_for("main_page_module.login"))  
-    
     entry_id = request.form["id"]
     name = str(entry_id).strip().replace(' ', '_')
     
@@ -75,10 +94,8 @@ def delete_entry():
 
 
 @main_page_module.route('/new_entry', methods=['GET', 'POST'])
+@login_required
 def new_entry():
-    
-    if check_login(): return redirect(url_for("main_page_module.login"))  
-    
     # If sign in form is submitted
     form = EntryForm(request.form)
     
@@ -104,9 +121,8 @@ def new_entry():
     return render_template("main_page_module/new_entry.html", form=form)
 
 @main_page_module.route('/all_entry/')
+@login_required
 def all_entry():
-    if check_login(): return redirect(url_for("main_page_module.login"))  
-    
     storage_location = "app//main_page_module//data//"
     
     files = []
@@ -121,9 +137,8 @@ def all_entry():
     return render_template("main_page_module/all_entry.html", files=files)
 
 @main_page_module.route('/view_entry/<entry_name>', methods=['GET', 'POST'])
+@login_required
 def view_entry(entry_name):
-    if check_login(): return redirect(url_for("main_page_module.login"))  
-    
     title = str(entry_name).strip().replace('_', ' ').capitalize()
     text = ""
     
@@ -143,9 +158,8 @@ def view_entry(entry_name):
     return render_template("main_page_module/view_entry.html", entry_name=title, entry_text=text, link_entry_name=entry_name)
 
 @main_page_module.route('/edit_entry/<entry_name>', methods=['GET', 'POST'])
+@login_required
 def edit_entry(entry_name):
-    if check_login(): return redirect(url_for("main_page_module.login"))  
-    
     title = str(entry_name).strip().replace('_', ' ').capitalize()
     text = ""
     banana = f"app//main_page_module//data//{entry_name}.txt"
@@ -180,20 +194,40 @@ def edit_entry(entry_name):
 
     return render_template("main_page_module/edit_entry.html", entry_name=title, entry_text=text, link_entry_name=entry_name, form=form)
 
-        
-@main_page_module.route('/admin/all_users/')
-def all_users():
-    if check_login(): return redirect(url_for("main_page_module.login"))  
+
+@main_page_module.route('/get_zipped_entries/')
+@login_required
+def get_zipped_entries():
+    now = datetime.datetime.now()
     
+    base_path = pathlib.Path('app//main_page_module//data//')
+    data = io.BytesIO()
+    with zipfile.ZipFile(data, mode='w') as z:
+        for f_name in base_path.iterdir():
+            print
+            z.write(f_name, os.path.basename(f_name))
+    data.seek(0)
+    
+    return send_file(
+        data,
+        mimetype='application/zip',
+        as_attachment=True,
+        attachment_filename=f'all_entries_{now.strftime("%Y-%m-%d_%H-%M")}.zip',
+        cache_timeout=0
+    )
+
+
+@main_page_module.route('/admin/all_users/')
+@login_required
+def all_users():
     users = User.query.all()
    
     return render_template("main_page_module/admin/all_users.html", users=users)
 
 
 @main_page_module.route('/admin/view_user/<user_id>')
+@login_required
 def view_user(user_id):
-    if check_login(): return redirect(url_for("main_page_module.login"))  
-    
     user = User.query.filter_by(id=user_id).first()
    
     if not user:
@@ -208,9 +242,8 @@ def view_user(user_id):
     return render_template("main_page_module/admin/view_user.html", form=form, user=user)
 
 @main_page_module.route('/admin/modify_user/', methods=['POST'])
+@login_required
 def modify_user():
-    if check_login(): return redirect(url_for("main_page_module.login"))  
-    
     form = EditUserForm(request.form)
     
     if form.validate_on_submit():
@@ -239,9 +272,8 @@ def modify_user():
     
 
 @main_page_module.route('/admin/delete/', methods=['POST'])
+@login_required
 def delete_user():
-    if check_login(): return redirect(url_for("main_page_module.login"))  
-    
     user_id = request.form["id"]
     
     user = User.query.filter_by(id=user_id).first()
@@ -266,7 +298,6 @@ def login():
 
     # If sign in form is submitted
     form = LoginForm(request.form)
-    
     
 
     # Verify the sign in form
@@ -298,6 +329,7 @@ def login():
         return render_template("main_page_module/auth/login.html", form=form)
 
 @main_page_module.route('/logout/')
+@login_required
 def logout():
     session.pop("user_id", None)
     session.permanent = False

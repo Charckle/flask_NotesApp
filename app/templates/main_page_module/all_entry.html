@@ -31,6 +31,7 @@
 {% block content%}
 
 <legend>All Entries</legend>
+<a href="{{ url_for('main_page_module.get_zipped_entries') }}" class="btn btn-warning btn-sm" role="button">Download the archive</a>
 
 <div id="all_entries" class="container">
   {% for i in files%}
